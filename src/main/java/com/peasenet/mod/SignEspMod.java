@@ -1,20 +1,17 @@
 package com.peasenet.mod;
 
 import com.peasenet.main.GavinsMod;
-import com.peasenet.mod.misc.ModExample;
+import com.peasenet.mods.esp.ModSignEsp;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class Mod_template implements ModInitializer {
-    public static Logger LOGGER = LoggerFactory.getLogger("gavinsmod");
-
+public class SignEspMod implements ModInitializer {
     /**
      * Runs the mod initializer.
      */
     @Override
     public void onInitialize() {
-        LOGGER.info("Hello Fabric world!");
-        GavinsMod.addMod(new ModExample());
+        GavinsMod.addMod(new ModSignEsp());
     }
 }

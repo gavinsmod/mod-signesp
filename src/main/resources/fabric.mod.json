@@ -1,27 +1,24 @@
 {
   "schemaVersion": 1,
-  "id": "mod-template",
+  "id": "gem-signesp",
   "version": "${version}",
-  "name": "mod-template",
+  "name": "gem-signesp",
   "description": "",
   "authors": [],
   "contact": {
-    "repo": "https://github.com/gavinsmod/mod-template"
+    "repo": "https://github.com/gavinsmod/mod-signesp"
   },
   "license": "MIT",
-  "icon": "assets/mod-template/icon.png",
+  "icon": "assets/gem-signesp/icon.png",
   "environment": "client",
   "entrypoints": {
     "main": [
-      "com.peasenet.mod.Mod_template"
+      "com.peasenet.mod.SignEspMod"
     ]
   },
-  "mixins": [
-    "mod-template.mixins.json"
-  ],
   "depends": {
     "fabricloader": ">=${loader_version}",
-    "gavinsmod": ">=1.4.5",
+    "gemclient-core": "1.0.3",
     "fabric": "*",
     "minecraft": "${minecraft_version}"
   }
